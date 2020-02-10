@@ -12,8 +12,15 @@ namespace variables
       //Ask the user for their name and store it in a variable called user
       Console.WriteLine("hello, whats your name?");
       var user = Console.ReadLine();
-      //Print out a greeting to the user, using their name
-      Console.WriteLine("hi," + user);
+      if (user == "Alice")
+      {
+        Console.WriteLine("Hi, Alice! Don't eat the cake!");
+      }
+      else
+      {
+        Console.WriteLine("hi," + user);
+      }
+      //Print out a greeting to the user, using their name above added if then alice user
       //Ask the user to input two numbers
       Console.WriteLine("please enter 2 numbers");
       //Get the numbers as Strings using Console.ReadLine
@@ -37,6 +44,9 @@ namespace variables
       //Find the remainder when one operand is divided by the other and save in a remainder variable. 
       var remainder = double.Parse(number2) % double.Parse(number1);
       Console.WriteLine("remainder=" + remainder);
+      DateTime todayTime = DateTime.Now;
+      Console.WriteLine(todayTime);
+
     }
   }
 }
